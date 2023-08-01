@@ -15,13 +15,14 @@ export default function Navbar() {
   }
   return (
     <div className={`${theme}`}>
-        <nav className="navbar">
-            <p>Logo</p>
+        <nav className={`navbar ${theme}`}>
+            <p className="text-2xl font-bold">Chris.</p>
             <ul className="hidden sm:flex">
                 <li><Link to="/" className="navlink">Home</Link></li>
                 <li><Link to="/Skills" className="navlink">Skills</Link></li>
                 <li><Link to="/About" className="navlink">About</Link></li>
-                <li><Link to="/" className="navlink">Home</Link></li>
+                <li><Link to="/" className="navlink">Projects</Link></li>
+                <li><Link to="/" className="navlink">Contact</Link></li>
                 <button className="ml-4" onClick={changeTheme}>{txt}</button>
             </ul>
             <div className="sm:hidden flex">
@@ -34,7 +35,7 @@ export default function Navbar() {
              &&
               <div className={`modal ${theme}`}>
                 <nav className={`navbar border-b-[1px] ${theme}`}>
-                    <p>Logo</p>
+                    <p className="text-2xl font-bold">Chris.</p>
                     <button onClick={()=>setMobile(false)}><AiOutlineClose className="w-5 h-5"/></button>
                 </nav>
                 <ul className="">

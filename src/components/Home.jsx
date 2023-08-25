@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import { AiFillGithub,AiFillLinkedin,AiFillFacebook,AiFillInstagram } from "react-icons/ai";
 import chris from "../assets/images/chris.jpg"
 export default function Home() {
-  const {theme,ui}=useContext(ThemeContext);
+  const {theme,ui,green,button}=useContext(ThemeContext);
   return (
     <div className={`absolute top-0 left-0 w-full h-screen overflow-y-scroll ${theme}`}>
         <div className="container">
@@ -19,9 +19,9 @@ export default function Home() {
 
             <div className="w-full sm:h-[300px] flex flex-col justify-center sm:items-start items-center mt-6 sm:mt-0">
               <p>Hello</p>
-              <p className="text-2xl text-[#8F00FF]">I am christopher shayo</p>
+              <p className={`${green} text-2xl`}>I am christopher shayo</p>
               <p>a web developer</p>
-              <button className="bg-[#8F00FF] px-4 py-2 font-semibold mt-2 text-white rounded-lg">Hire me</button>
+              <button className={`${button} px-4 py-2 font-semibold mt-2 rounded-lg`}>Hire me</button>
             </div>
           </div>
           <div className="flex relative top-32 justify-center ">

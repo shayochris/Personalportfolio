@@ -20,31 +20,29 @@ export default function About() {
             {/* <p className='p-2 text-xl text-blue-600'>About me</p> */}
             <div className="p-2 my-2">
               
-                <div className="my-2">
-                    <p className='pb-2 font-semibold text-lg'>Hi i'm christopher shayo</p>
-                    <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, praesentium! Vel maiores non ipsum impedit inventore esse a corporis quidem, corrupti distinctio ut! Quo id ut vel accusantium reprehenderit sit.</p>
-                </div>
-                <div className="mt-4 grid sm:grid-cols-3 gap-4 text-sm mb-2">
-                    <div className={`card flex  items-center p-4 ${ui}`}>
-                        <div className={`${ui} h-8 w-8 rounded-full flex justify-center items-center`}>
-                            <MdEmail className='h-6 w-6'/>
+                <div className="my-2 bg-[#fcddfc] p-2 rounded-lg">
+                    <p className='pb-2 font-semibold text-lg text-[#8F00FF]'>Hi i'm christopher shayo</p>
+                    <p className='text-sm text-black'>I am a proffessional web developer capable of creating cross cutting websites with 2 years of experience.Programming is my passion and commitment i give the best i have got to my work, feel free to reach out anytime you will need my services</p>
+                    <div className="mt-2 text-sm">
+                        <div className='flex  items-center text-black'>
+                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
+                                <MdEmail className='h-6 w-6'/>
+                            </div>
+                            <p className='ml-2'>chrisshayo4@gmail.com</p> 
                         </div>
-                        <p className='ml-2'>chrisshayo4@gmail.com</p> 
-                    </div>
-                    <div className={`card flex  items-center p-4 ${ui}`}>
-                        <div className={`${ui} h-8 w-8 rounded-full flex justify-center items-center`}>
-                            <AiFillPhone className='h-6 w-6'/>
+                        <div className='flex  items-center text-black'>
+                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
+                                <AiFillPhone className='h-6 w-6'/>
+                            </div>
+                            <p className='ml-2'>0766495628</p> 
                         </div>
-                        <p className='ml-2'>+255 766 495 628</p> 
-                    </div>
-                    <div className={`card flex  items-center p-4 ${ui}`}>
-                        <div className={`${ui} h-8 w-8 rounded-full flex justify-center items-center`}>
-                            <MdLocationOn className='h-6 w-6'/>
+                        <div className='flex  items-center text-black'>
+                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
+                                <MdLocationOn className='h-6 w-6'/>
+                            </div>
+                            <p className='ml-2'>Tanzania</p> 
                         </div>
-                        <p className='ml-2'>Mbeya, Tanzania</p> 
                     </div>
-                    
-
                 </div>
 
                 <div className='mt-12'>

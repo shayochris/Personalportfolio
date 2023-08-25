@@ -5,7 +5,7 @@
   @apply w-full flex  justify-between items-center p-2 z-20;
 }
 .navlink{
-  @apply  px-2 hover:text-blue-500
+  @apply  px-2 hover:text-[#8F00FF] font-semibold
 }
 .container{
   @apply w-full sm:w-[80%] lg:w-[60%] mx-auto p-2

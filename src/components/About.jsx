@@ -10,6 +10,7 @@ import {HiOfficeBuilding} from "react-icons/hi"
 import {BiSolidTimeFive} from "react-icons/bi"
 import camera from "../assets/images/laptop.jpg"
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import MobileNav from './MobileNav';
 
 export default function About() {
     const {theme,isDark,ui}=useContext(ThemeContext);
@@ -125,7 +126,7 @@ export default function About() {
                 </div>
             </div>
         </div>
-        
+        <MobileNav/>
     </div>
   )
 }

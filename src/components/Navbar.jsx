@@ -1,28 +1,28 @@
 import {Link} from "react-router-dom"
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AiOutlineClose,AiOutlineMenu,AiOutlineHome,AiOutlineProfile} from "react-icons/ai";
 import { BsBrightnessHighFill,BsFillCloudMoonFill} from "react-icons/bs";
-import { useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
+import { ThemeContext, } from "../contexts/ThemeContext";
+
 export default function Navbar() {
   const [mobile,setMobile]=useState(false);
-  const {theme,setIsDark,isDark}=useContext(ThemeContext);
+  const {theme,isDark} = useContext(ThemeContext)
   const txt=isDark ? <BsBrightnessHighFill className="w-5 h-5"/> : <BsFillCloudMoonFill className="w-5 h-5"/>;
   const changeTheme=()=>{
     const mode=JSON.parse(localStorage.getItem("dark"));
-    setIsDark(!mode);
+    theme.setIsDark(!mode);
     localStorage.setItem("dark",JSON.stringify(!mode));
   }
   return (
     <div className={`${theme}`}>
         <nav className={`navbar ${theme}`}>
-            <p className="text-2xl font-bold">Chris.</p>
+            <p className={`${theme.green} text-2xl font-bold`}>Chris.</p>
             <ul className="hidden sm:flex">
-                <li><Link to="/" className="navlink">Home</Link></li>
-                <li><Link to="/Skills" className="navlink">Skills</Link></li>
-                <li><Link to="/About" className="navlink">About</Link></li>
-                <li><Link to="/" className="navlink">Projects</Link></li>
-                <li><Link to="/" className="navlink">Contact</Link></li>
+                <li><Link to="/" className={` navlink`}>Home</Link></li>
+                <li><Link to="/Skills" className={` navlink`}>Skills</Link></li>
+                <li><Link to="/About" className={` navlink`}>About</Link></li>
+                <li><Link to="/" className={` navlink`}>Projects</Link></li>
+                <li><Link to="/" className={` navlink`}>Contact</Link></li>
                 <button className="ml-4" onClick={changeTheme}>{txt}</button>
             </ul>
             <div className="sm:hidden flex">

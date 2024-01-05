@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
 import { GiGraduateCap } from "react-icons/gi"
-import {BsPersonFill, BsPhoneFill} from "react-icons/bs"
+import {BsPersonFill, BsPhoneFill, BsStars} from "react-icons/bs"
 import {SiWebpack} from "react-icons/si"
 import {MdEmail,MdLocationOn} from "react-icons/md"
 import {AiFillAndroid, AiFillBulb, AiFillPhone} from "react-icons/ai"
@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import MobileNav from './MobileNav';
 
 export default function About() {
-    const {theme,isDark,ui}=useContext(ThemeContext);
+    const {theme,isDark,ui,border}=useContext(ThemeContext);
   return (
     <div className={`absolute h-full w-full left-0 top-0 overflow-y-scroll ${theme}`}>
         <div className="container ">
@@ -22,29 +22,21 @@ export default function About() {
             {/* <p className='p-2 text-xl text-blue-600'>About me</p> */}
             <div className="p-2 my-2">
               
-                <div className={`my-2  p-2 rounded-lg ${ui}`}>
-                    <p className='pb-2 font-semibold text-lg'>Hi i'm christopher shayo</p>
-                    <p className='text-sm'>I am a proffessional web developer capable of creating cross cutting websites with 2 years of experience.Programming is my passion and commitment i give the best i have got to my work, feel free to reach out anytime you will need my services</p>
+                <div className={`my-2  p-2 rounded-lg`}>
+                    <p className={`pb-2 font-semibold text-xl border-b ${border} flex items-center text-green-500`}>
+                        <span><BsStars className='w-6 h-6 text-green-500 mr-2' /></span>
+                        About Me</p>
+                    <p className='mt-2 font-semibold text-lg'>I'm christopher shayo</p>
+                    <p className="text-sm pb-2">web developer</p>
+                    <p className='text-sm my-2'>I am a proffessional web developer capable of creating cross cutting websites with 2 years of experience.Programming is my passion and commitment, i give the best i have got to my work, feel free to reach out anytime you need my services</p>
                     <div className="mt-2 text-sm">
-                        <div className='flex  items-center'>
-                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
-                                <MdEmail className='h-6 w-6'/>
-                            </div>
-                            <p className='ml-2'>chrisshayo4@gmail.com</p> 
-                        </div>
-                        <div className='flex  items-center'>
-                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
-                                <AiFillPhone className='h-6 w-6'/>
-                            </div>
-                            <p className='ml-2'>0766495628</p> 
-                        </div>
-                        <div className='flex  items-center'>
-                            <div className='h-8 w-8 rounded-full flex justify-center items-center'>
-                                <MdLocationOn className='h-6 w-6'/>
-                            </div>
-                            <p className='ml-2'>Tanzania</p> 
-                        </div>
+                       <p className="text-green-500 font-semibold my-1">Full Name: <span className={`${theme}`}>Christopher Honest Shayo</span></p>
+                       <p className="text-green-500 font-semibold my-1">Email: <span className={`${theme}`}>chrisshayo4@gmail.com</span></p>
+                       <p className="text-green-500 font-semibold my-1">Phone: <span className={`${theme}`}>+255766495628</span></p>
+                       <p className="text-green-500 font-semibold my-1">Location : <span className={`${theme}`}>Dar es Salaam, Tanzania</span></p>
                     </div>
+
+                    <button className="bg-primary text-white px-4 py-2 rounded-full mt-4">Download CV</button>
                 </div>
 
                 <div className='mt-12'>
@@ -89,8 +81,30 @@ export default function About() {
                 </div>
                 <div className='mt-12'>
                     <p className='pb-2 font-semibold text-xl '>Education</p>
-                    <div className="mt-2 grid sm:grid-cols-3 gap-4 text-sm mb-2">
-                        <div className={`card flex  items-center p-4 ${ui}`}>
+                    <div className="mt-2 text-sm mb-2">
+                        <div className={`${ui} rounded-lg`}>
+                            <p className={`border-b ${border} p-4 text-lg font-semibold flex items-center`}>
+                                <span><BsStars className='w-6 h-6 text-purple-500 mr-2' /></span>
+                                Bachelor Degree</p>
+                            <div className="p-4">
+                                <div className="flex items-center py-2">
+                                    <GiGraduateCap className='w-5 h-5 mr-2'/>
+                                    <p>Computer Science</p>
+                                </div>
+                                <div className="flex items-center py-2">
+                                    <HiOfficeBuilding className='w-5 h-5 mr-2'/>
+                                    <p>University of Dodoma</p>
+                                </div>
+                                <div className="flex items-center py-2">
+                                    <MdLocationOn className='w-5 h-5 mr-2'/>
+                                    <p>Dodoma, Tanzania</p>
+                                </div> <div className="flex items-center py-2">
+                                    <BiSolidTimeFive className='w-5 h-5 mr-2'/>
+                                    <p>Nov 2018 - Aug 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className={`card flex  items-center p-4 ${ui}`}>
                             <div className={`${ui} h-8 w-8 rounded-full flex justify-center items-center`}>
                                 <GiGraduateCap className='h-6 w-6'/>
                             </div>
@@ -107,12 +121,12 @@ export default function About() {
                                 <BiSolidTimeFive className='h-6 w-6'/>
                             </div>
                             <p className='ml-2'>2018-2021</p> 
-                        </div>
+                        </div> */}
                     </div>
                     
                 </div>
 
-                <div className='mt-12'>
+                {/* <div className='mt-12'>
                     <p className='pb-2 font-semibold text-xl'>Experience</p>
                     <div className="mt-2 grid grid-cols-3 gap-4 text-sm mb-2">
                         <div className={`card flex flex-col justify-center items-center p-4 ${ui}`}>
@@ -129,7 +143,7 @@ export default function About() {
                         </div>
                     </div>
                     
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

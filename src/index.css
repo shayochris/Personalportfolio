@@ -19,3 +19,6 @@
 .card-2{
   @apply rounded-lg 
 }
+.avatar-lg{
+  @apply w-20 h-20 rounded-full 
+}

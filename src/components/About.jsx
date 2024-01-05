@@ -4,8 +4,9 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
 import { GiGraduateCap } from "react-icons/gi"
 import {BsPersonFill, BsPhoneFill} from "react-icons/bs"
+import {SiWebpack} from "react-icons/si"
 import {MdEmail,MdLocationOn} from "react-icons/md"
-import {AiFillPhone} from "react-icons/ai"
+import {AiFillAndroid, AiFillBulb, AiFillPhone} from "react-icons/ai"
 import {HiOfficeBuilding} from "react-icons/hi"
 import {BiSolidTimeFive} from "react-icons/bi"
 import camera from "../assets/images/laptop.jpg"
@@ -50,33 +51,38 @@ export default function About() {
                     <p className='pb-2 font-semibold text-xl'>Services I Offer</p>
                     
                     <div className="grid sm:grid-cols-2 gap-4 mt-2">
-                        <div className={`card-2 p-2 overflow-hidden ${ui}`}>
-                            <div className={`flex  items-center`}>
-                                <MdEmail className='h-8 w-8 '/>
-                                <p className='ml-2 text-lg font-semibold'>Frontend Development</p> 
+                        <div className={`overflow-hidden rounded-lg ${ui}`}>
+                            <div className="flex items-center justify-center p-4 bg-purple-500 h-[80px]">
+                                <div className={`avatar-lg bg-purple-700 flex items-center justify-center mt-16 ring-4 ${isDark ? "ring-[#282828]" : "ring-[#eee]"}`}>
+                                    <SiWebpack className='w-8 h-8 text-white'/>
+                                </div>
                             </div>
-                            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, perferendis quam provident voluptatum nam unde fuga cumque veritatis consequuntur laboriosam, aut inventore itaque, voluptates sapiente! Explicabo, mollitia. Illum, aliquid laudantium?</p>
+                            <div className={`mt-12 p-3 text-center ${ui}`}>
+                                <p className="text-lg font-semibold mb-2 text-purple-500">Web development</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis vel non laborum eos ab. Mollitia quos unde perferendis laboriosam aliquid doloremque harum quam, dolore atque eveniet officia asperiores neque! Quisquam.</p>
+                            </div>
                         </div>
-                        <div className={`card-2 p-2 overflow-hidden ${ui}`}>
-                            <div className={`flex  items-center`}>
-                                <MdEmail className='h-8 w-8 '/>
-                                <p className='ml-2 text-lg font-semibold'>Backend Development</p> 
+                        <div className={`overflow-hidden rounded-lg ${ui}`}>
+                            <div className="flex items-center justify-center p-4 bg-blue-500 h-[80px]">
+                                <div className={`avatar-lg bg-blue-700 flex items-center justify-center mt-16 ring-4 ${isDark ? "ring-[#282828]" : "ring-[#eee]"}`}>
+                                    <AiFillAndroid className='w-8 h-8 text-white'/>
+                                </div>
                             </div>
-                            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, perferendis quam provident voluptatum nam unde fuga cumque veritatis consequuntur laboriosam, aut inventore itaque, voluptates sapiente! Explicabo, mollitia. Illum, aliquid laudantium?</p>
+                            <div className={`mt-12 p-3 text-center ${ui}`}>
+                                <p className="text-lg font-semibold mb-2 text-blue-500">App development</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis vel non laborum eos ab. Mollitia quos unde perferendis laboriosam aliquid doloremque harum quam, dolore atque eveniet officia asperiores neque! Quisquam.</p>
+                            </div>
                         </div>
-                        <div className={`card-2 p-2 overflow-hidden ${ui}`}>
-                            <div className={`flex  items-center`}>
-                                <MdEmail className='h-8 w-8 '/>
-                                <p className='ml-2 text-lg font-semibold'>Databases</p> 
+                        <div className={`overflow-hidden rounded-lg ${ui}`}>
+                            <div className="flex items-center justify-center p-4 bg-green-500 h-[80px]">
+                                <div className={`avatar-lg bg-green-700 flex items-center justify-center mt-16 ring-4 ${isDark ? "ring-[#282828]" : "ring-[#eee]"}`}>
+                                    <AiFillBulb className='w-8 h-8 text-white'/>
+                                </div>
                             </div>
-                            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, perferendis quam provident voluptatum nam unde fuga cumque veritatis consequuntur laboriosam, aut inventore itaque, voluptates sapiente! Explicabo, mollitia. Illum, aliquid laudantium?</p>
-                        </div>
-                        <div className={`card-2 p-2 overflow-hidden ${ui}`}>
-                            <div className={`flex  items-center`}>
-                                <MdEmail className='h-8 w-8 '/>
-                                <p className='ml-2 text-lg font-semibold'>APIs</p> 
+                            <div className={`mt-12 p-3 text-center ${ui}`}>
+                                <p className="text-lg font-semibold mb-2 text-green-500">Ui/UX Design</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis vel non laborum eos ab. Mollitia quos unde perferendis laboriosam aliquid doloremque harum quam, dolore atque eveniet officia asperiores neque! Quisquam.</p>
                             </div>
-                            <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, perferendis quam provident voluptatum nam unde fuga cumque veritatis consequuntur laboriosam, aut inventore itaque, voluptates sapiente! Explicabo, mollitia. Illum, aliquid laudantium?</p>
                         </div>
                     </div>
                     

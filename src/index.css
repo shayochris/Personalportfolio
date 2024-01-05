@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .navbar{
-  @apply w-full md:flex hidden  justify-between items-center p-2 z-20;
+  @apply w-full flex  justify-between items-center p-2 z-20;
 }
 .navlink{
   @apply  px-2 font-semibold
@@ -11,11 +11,11 @@
   @apply w-full sm:w-[80%] lg:w-[60%] mx-auto p-2
 }
 .modal{
-  @apply w-full h-full fixed top-0 left-0 z-10 sm:hidden p-2 bg-white z-10
+  @apply w-full z-10 sm:hidden p-2
 }
 .card{
-  @apply border-[1px]  p-2 rounded-lg 
+  @apply p-2 rounded-lg 
 }
 .card-2{
-  @apply border-[1px]  rounded-lg 
+  @apply rounded-lg 
 }

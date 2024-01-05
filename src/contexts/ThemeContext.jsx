@@ -5,10 +5,9 @@ import { createContext } from "react";
 export const ThemeContext=createContext();
 const ThemeContextProvider = ({ children }) => {
     const [isDark,setIsDark]=useState(JSON.parse(localStorage.getItem("dark")));
-    const ui=isDark ? "bg-[#282828]" : "bg-[#282828]";
-    const theme=isDark ? "bg-[#121212] text-[#FFFFFF]" : "bg-[[#121212] text-[#FFFFFF]";
-    const border = isDark ? "border-[#282828]" : "border-[#282828]"
-    console.log(theme)
+    const ui=isDark ? "bg-[#282828]" : "bg-[#eee]";
+    const theme=isDark ? "bg-[#121212] text-[#FFFFFF]" : "bg-[#FFFFFF] text-gray-600";
+    const border = isDark ? "border-[#404040]" : "border-[#ddd]"
     useEffect(()=>{
         setIsDark(JSON.parse(localStorage.getItem("dark")));
     },[isDark])

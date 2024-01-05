@@ -8,8 +8,8 @@ export default function MobileNav() {
         <div className="py-2 px-4 flex justify-between items-center">
 
             <Link to="/" className="flex flex-col justify-center items-center">
-                <AiFillHome className="w-5 h-5"/>
-                <p className="text-xs">Home</p>
+                <AiFillHome className="w-5 h-5 text-primary"/>
+                <p className="text-xs text-primary">Home</p>
             </Link>
             <Link to="/skills" className="flex flex-col justify-center items-center">
                 <AiFillStar className="w-5 h-5"/>

@@ -22,8 +22,8 @@ export default function Navbar() {
                 <li><Link to="/" className={` navlink`}>Home</Link></li>
                 <li><Link to="/Skills" className={` navlink`}>Skills</Link></li>
                 <li><Link to="/About" className={` navlink`}>About</Link></li>
-                <li><Link to="/" className={` navlink`}>Projects</Link></li>
-                <li><Link to="/" className={` navlink`}>Contact</Link></li>
+                <li><Link to="/Projects" className={` navlink`}>Projects</Link></li>
+                <li><Link to="/Contact" className={` navlink`}>Contact</Link></li>
                 <button className="ml-4" onClick={changeTheme}>{txt}</button>
             </ul>
             <div className="sm:hidden flex">
@@ -49,10 +49,10 @@ export default function Navbar() {
                   <li><Link to="/About" className={`flex items-center w-full p-2 border-b ${border}`}>
                     <span className="mr-2"><FaUser className="w-5 h-5"/></span>
                     About</Link></li>
-                  <li><Link to="/" className={`flex items-center w-full p-2 border-b ${border}`}>
+                  <li><Link to="/Projects" className={`flex items-center w-full p-2 border-b ${border}`}>
                     <span className="mr-2"><FaBriefcase className="w-5 h-5"/></span>
                     Projects</Link></li>
-                  <li><Link to="/" className={`flex items-center w-full p-2`}>
+                  <li><Link to="/Contact" className={`flex items-center w-full p-2`}>
                     <span className="mr-2"><AiFillMessage className="w-5 h-5"/></span>
                     Contact me</Link></li>
                 </ul>

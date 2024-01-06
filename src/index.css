@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.wrapper{
+  @apply absolute top-0 left-0 w-full h-screen overflow-y-scroll;
+}
 .navbar{
   @apply w-full flex  justify-between items-center p-2 z-20;
 }
@@ -21,4 +24,7 @@
 }
 .avatar-lg{
   @apply w-20 h-20 rounded-full 
+}
+.input{
+  @apply w-full p-4 rounded-lg outline-none focus:ring-1 focus:ring-primary text-sm
 }

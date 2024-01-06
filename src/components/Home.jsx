@@ -7,7 +7,7 @@ import chris from "../assets/images/chris.jpg"
 export default function Home() {
   const {theme, ui} =useContext(ThemeContext) ;
   return (
-    <div className={`absolute top-0 left-0 w-full h-screen overflow-y-scroll ${theme}`}>
+    <div className={`wrapper ${theme}`}>
         <div className="container">
           <Navbar/>
           <div className="flex sm:flex-row flex-col relative top-20 mb-4">
@@ -22,7 +22,9 @@ export default function Home() {
               <p className={`text-primary text-2xl`}>I am christopher shayo</p>
               <p>a web developer</p>
               <p className="text-center md:text-start my-2">As a passionate web developer , i specialize in crafting sophisticated systems using modern technology trends.Explore my portfolio to witness the fusion of creativity and innovation in the digital realm.</p>
-              <button className={`bg-primary text-white px-4 py-2 font-semibold mt-2 rounded-lg`}>Hire me</button>
+              <Link to="/contact">
+                <button className={`bg-primary text-white px-4 py-2 font-semibold mt-2 rounded-lg`}>Hire me</button>
+              </Link>
             </div>
           </div>
           <div className="flex relative top-24 justify-center ">

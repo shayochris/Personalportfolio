@@ -30,7 +30,7 @@ export default function Contact() {
                     <input type="text" className={`${ui} input my-2` } placeholder="Full Name" required
                     value={name} onChange={(e) => setname(e.target.value)}
                     />
-                    <input type="email" className={`${ui} input my-2` } placeholder="Your Emal" required
+                    <input type="email" className={`${ui} input my-2` } placeholder="Your Email" required
                     value={email} onChange={(e) => setemail(e.target.value)}
                     />
                     <textarea className={`${ui} input my-2`} cols="5" placeholder="Your Message" required

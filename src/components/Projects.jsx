@@ -53,7 +53,7 @@ export default function Projects() {
                                     <SiDjango className="text-white h-5 w-5"/>
                                 </div>
                             </div>
-                            <a href="https://social-x1vi.onrender.com" className="text-blue-500 text-sm font-semibold mt-2">Preview</a>
+                            <a href="https://ecommerce-o8ja.onrender.com" className="text-blue-500 text-sm font-semibold mt-2">Preview</a>
                         </div>
                     </div>
 

@@ -22,8 +22,9 @@ export default function Contact() {
         <div className="container">
             <Navbar/>
             <div className="p-2">
-                <h2 className="text-center text-xl text-primary font-semibold mt-4">Get in Touch</h2>
-                <form action="" className="w-[80%] md:w-[50%] mx-auto p-2" onSubmit={handleSubmit}>
+                
+                <form action="" className="w-[90%] md:w-[50%] mx-auto p-2 mt-8" onSubmit={handleSubmit}>
+                    <h2 className="text-2xl my-2 text-primary font-semibold">Get in Touch</h2>
                     {success && <p className="text-green-500 my-2" >Message Received</p>}
                     
                     <input type="text" className={`${ui} input my-2` } placeholder="Full Name" required
@@ -35,20 +36,20 @@ export default function Contact() {
                     <textarea className={`${ui} input my-2`} cols="5" placeholder="Your Message" required
                     value={message} onChange={(e) => setmessage(e.target.value)}
                     ></textarea>
-                    <div className="flex items-center justify-center my-2">
-                        <button className="bg-primary px-4 py-3 text-white rounded-lg">Submit</button>
+                    <div className=" my-2">
+                        <button className="bg-primary w-full px-4 py-3 text-white rounded-full">Submit</button>
                     </div>
                     
 
-                    <fieldset className={`border-t-2 ${border} text-center mt-4 text-primary`}>
-                        <legend className="p-2 font-semibold" >My Socials</legend>
+                    <fieldset className={`border-t-2 ${border} text-center mt-4`}>
+                        <legend className="p-2 font-semibold" >More</legend>
                     </fieldset>
 
                     <div className="flex justify-center ">
-                        <Link to="/" className="mr-4"><AiFillGithub className={`h-8 w-8 text-primary`}/></Link>
-                        <Link to="/" className="mr-4"><AiFillLinkedin className={`h-8 w-8 text-primary`}/></Link>
-                        <Link to="/" className="mr-4"><AiFillFacebook className={`h-8 w-8 text-primary`}/></Link>
-                        <Link to="/" className=""><AiFillInstagram className={`h-8 w-8 text-primary`}/></Link>
+                        <a href="https://github.com/shayochris" className="mr-4"><AiFillGithub className={`h-12 w-12 `}/></a>
+                        <a href="https://linkedin.com/in/christopher-shayo-032aba223" className="mr-4"><AiFillLinkedin className={`h-12 w-12 `}/></a>
+                        <a href="/" className="mr-4"><AiFillFacebook className={`h-12 w-12 `}/></a>
+                        <a href="/" className=""><AiFillInstagram className={`h-12 w-12 `}/></a>
                     </div>
 
                 </form>

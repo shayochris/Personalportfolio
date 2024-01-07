@@ -30,7 +30,9 @@ export default function About() {
                         About Me</p>
                     <p className='mt-2 font-semibold text-xl'>I'm christopher shayo</p>
                     <p className="text-sm pb-2">web developer</p>
-                    <p className=' my-2'>I am a proffessional web developer capable of creating cross cutting websites with 2 years of experience.Programming is my passion and commitment, i give the best i have got to my work, feel free to reach out anytime you need my services</p>
+                    <p className=' my-2'>
+                        I thrive on turning ideas into reality, and my journey in web development have been fueled by an endless love for clean code and innovative solutions. With keen eye for design and a knack for problem solving, i bring creativity to every project.
+                    </p>
                     <p className="mt-3 font-semibold flex items-center text-primary">
                          <span className={`mr-2`}>
                             <AiFillStar className='w-5 h-5 '/>

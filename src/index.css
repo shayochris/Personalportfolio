@@ -26,5 +26,5 @@
   @apply w-20 h-20 rounded-full 
 }
 .input{
-  @apply w-full p-4 rounded-lg outline-none focus:ring-1 focus:ring-primary text-sm
+  @apply w-full p-4 rounded-lg outline-none focus:ring-1 focus:ring-primary
 }
